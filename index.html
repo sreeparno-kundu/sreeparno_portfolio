@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreeparno_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a< /li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a id="logo">Sreeparno</a></li>
+            <li class="hideOnMobile"><a href="#main">Home</a></li>
+            <li class="hideOnMobile"><a href="#education">Education</a></li>
+            <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a< /li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="menu-button hideOnMobile" onclick=showSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- 
+    <nav>
+
+        <div class="logo nav-links">
+            <p>Sreeparno</p>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+
+    </nav> -->
+    <i onclick="toggleDarkMode()" class='bx bxs-moon bx-tada moon '></i>
+    <div class="main block" id="main">
+        <div class="left-main">
+            <img class="profile-pic" src="sreeparno.png">
+        </div>
+
+        <div class="right-main">
+            <h2>Hello, I am</h2>
+            <h1>Sreeparno Kundu</h1>
+            <!-- <br> -->
+            <h2>A Coding Enthusiast with keen interest in</h2>
+            <h2><span>Web Development</span> and <span>DSA</span> </h2>
+
+        </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="education block" id="education">
+        <div class="exams">
+            <h1>EDUCATION</h1>
+        </div>
+        <!-- <br> -->
+        <div class="educards-cont">
+            <div class="educards">
+                <div class="exam1 exam-card">
+                    <p><b>AISSE</b></p>
+                    <p><b>93.8 %</b></p>
+                    <p>South Point High School</p>
+                </div>
+                <div class="exam2 exam-card">
+                    <p><b>AISSCE</b></p>
+                    <p><b>93.2 %</b></p>
+                    <p>South Point High School</p>
+                </div>
+            </div>
+            <div class="educards">
+                <div class="exam3 exam-card">
+                    <p><b>SEM1</b></p>
+                    <p><b>7.71 GPA</b></p>
+                    <p>MAKAUT</p>
+                </div>
+                <div class="exam4 exam-card">
+                    <p><b>SEM2</b></p>
+                    <p><b>9.32 GPA</b></p>
+                    <p>MAKAUT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="skills block" id="skills">
+        <div>
+            <h1>SKILLS</h1>
+        </div>
+        <!-- <br> -->
+        <div class="skill1 skill-card">
+            <p>HTML</p>
+            <div class="perc">
+                <div class="percin perc1">90%</div>
+            </div>
+        </div>
+        <div class="skill2 skill-card">
+            <p>CSS</p>
+            <div class="perc">
+                <div class="percin perc2">75%</div>
+            </div>
+        </div>
+        <div class="skill3 skill-card">
+            <p>JS</p>
+            <div class="perc">
+                <div class="percin perc3">20%</div>
+            </div>
+        </div>
+        <div class="skill4 skill-card">
+            <p>C</p>
+            <div class="perc">
+                <div class="percin perc4">80%</div>
+            </div>
+        </div>
+        <div class="skill5 skill-card">
+            <p>PYTHON</p>
+            <div class="perc">
+                <div class="percin perc5">90%</div>
+            </div>
+        </div>
+        <div class="skill6 skill-card">
+            <p>MYSQL</p>
+            <div class="perc">
+                <div class="percin perc6">65%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="projects block" id="projects">
+        <div class="exams">
+            <h1>PROJECTS</h1>
+        </div>
+        <br>
+        <div class="proj1 proj-card" id="projcard1">
+            <div class="blackfade">
+                <h2 id="p1"><b><u>Hackerspace Website</u></b></h2>
+                <p id="p2">This is a multi-theme website made as a part of Hackerspace CodeCraft competitition. </p>
+                <!-- <br> -->
+                <a id="p3" href="https://sreeparno-kundu.github.io/Sreeparno_Hackerspace_Website/" target="_blank">Go to
+                    the
+                    website --></a>
+            </div>
+        </div>
+        <div class="proj2 proj-card" id="projcard2">
+            <div class="blackfade">
+                <h2 id="p1"><b><u>NETFLIX Clone</u></b></h2>
+                <p id="p2">This is a website made to clone the NETFLIX India homepage. </p>
+                <!-- <br> -->
+                <a id="p3" href="https://sreeparno-kundu.github.io/nflix/" target="_blank">Go to the website --></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="contact block" id="contact">
+        <div class="contact-text">
+            <h1>CONTACT ME</h1>
+        </div>
+        <div class="email contact-card">
+            <h2>Email :</h2>
+            <a href="mailto: sreeparnokundu04@gmail.com">sreeparnokundu04@gmail.com</a>
+        </div>
+        <div class="phone contact-card">
+            <h2>Phone :</h2>
+            <a href="tel:+918697095625">+91 86970 95625</a>
+        </div>
+    </div>
+
+    <div class="sep"></div>
+
+
+    <footer>
+        <div class="cpright">
+            © Sreeparno Kundu
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

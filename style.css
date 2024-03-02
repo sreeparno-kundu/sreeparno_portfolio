@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Dawning+of+a+New+Day&family=Satisfy&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ============LIGHT CSS============ */
+:root {
+    --color1: white;
+    --color2: black;
+}
+
+/* ============DARK CSS============ */
+.dark-mode {
+    --color1: black;
+    --color2: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--color1);
+
+}
+
+/* ============NAV CSS============ */
+
+/* .logo {
+    font-weight: 1000;
+    font-size: 40px;
+    font-family: 'Dawning of a New Day', cursive;
+    color: rgb(220, 185, 253);
+
+} */
+/* 
+.nav-links {
+    margin: 10px 0px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+/* 
+.nav-links ul li {
+    display: inline-block;
+    padding: 10px;
+} */
+
+/* .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 100px;
+} */
+
+/* .nav-links li a:hover {
+    color: rgb(220, 185, 253);
+    box-shadow: 0px 0px 20px 1px rgba(144, 19, 254, 1),
+    25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+} */
+
+/* ============MOON CSS============ */
+.moon {
+    font-size: 30px;
+    color: var(--color1);
+    background-color: var(--color2);
+    border: 5px solid var(--color1);
+    padding: 10px;
+    border-radius: 1000px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0px 0px 20px 5px aqua,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+/* ============NAV CSS============ */
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0px;
+
+    box-shadow: 0px 0px 20px 5px aqua,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+    border-bottom: 5px solid var(--color2);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+nav a:hover {
+    box-shadow: 0px 0px 20px 1px rgba(144, 19, 254, 1),
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+    border-radius: 50px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-weight: 1000;
+    font-size: 30px;
+    font-family: 'Dawning of a New Day', cursive;
+    padding: 5px;
+}
+
+nav li:first-child>a:hover {
+    box-shadow: none;
+}
+
+#logo {
+    color: aqua;
+    font-weight: 800;
+
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: black;
+    opacity: 0.8;
+    backdrop-filter: blur(1px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 10px;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+.bx-menu,
+.bx-x {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* ============MAIN CSS============ */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+#main {
+    margin-top: 105px;
+}
+
+.right-main {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.left-main {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-pic {
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50% 10% 50% 10%;
+    box-shadow: 0px 0px 120px 1px rgba(144, 19, 254, 1),
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+    background-color: rgb(144, 19, 254, 0.2);
+
+
+}
+
+.right-main h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: blueviolet;
+}
+
+.right-main h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color2);
+}
+
+/* ============BLOCK CSS============ */
+.block {
+    width: 85vw;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 60px 0 60px 0;
+    border: 5px solid var(--color2);
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 5px aqua,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+        /* opacity:0; */
+    animation: slideleft 1s forwards;
+    
+}
+
+@keyframes slideleft{
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ============SEPARATION CSS============ */
+/* .sep{
+    height:5px;
+    width:50%;
+    background-color: var(--color2);
+    margin: auto;
+    border-radius: 1000px; 
+} */
+/* ============EDUCATION CSS============ */
+.education {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.educards-cont {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.educards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.exam-card:hover {
+    color: aqua;
+    box-shadow: 0px 0px 20px 2px rgba(144, 19, 254, 1),
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+    background-color: rgb(31, 0, 46);
+    transition: ease-in-out 0.5s;
+    transform: rotate(6deg) scale(0.9);
+}
+
+.exams h1 {
+    font-size: 45px;
+    color: blueviolet;
+}
+
+.exam-card {
+    background-color: black;
+    padding: 20px;
+    width: 200px;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+    height: 200px;
+    box-shadow: 0px 0px 20px 2px aqua,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+
+
+}
+
+/* ============SKILLS CSS============ */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-card {
+    border-radius: 100px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 20px 2px aqua,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.skill-card p {
+    width: 80%;
+    margin: auto;
+}
+
+.perc {
+    background-color: #fff;
+    border-radius: 50px;
+    height: 20px;
+    width: 80%;
+    font-size: 14px;
+    margin: auto;
+}
+
+.percin {
+    background-color: blueviolet;
+    border-radius: 50px;
+    height: 20px;
+    padding-left: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.skill-card:hover {
+    color: rgb(255, 47, 193);
+    font-weight: 800;
+    background-color: rgb(31, 0, 46);
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 0px 20px 1px rgba(144, 19, 254, 1),
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+
+    .percin {
+        background-color: rgb(255, 47, 193);
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        transition: ease-in-out 0.3s;
+    }
+}
+
+.perc1 {
+    width: 90%;
+}
+
+.perc2 {
+    width: 75%;
+}
+
+.perc3 {
+    width: 20%;
+}
+
+.perc4 {
+    width: 80%;
+}
+
+.perc5 {
+    width: 90%;
+}
+
+.perc6 {
+    width: 65%;
+}
+
+.skills h1 {
+    font-size: 50px;
+    color: blueviolet;
+}
+
+/* ============PROJECTS CSS============ */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-card {
+    background-color: black;
+    /* padding: 20px; */
+    width: 700px;
+    height: 400px;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid blueviolet;
+    box-shadow: 0px 0px 20px 2px aqua,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+    transition: ease-in-out 1s;
+
+}
+
+.proj1 {
+    background-image: url(hackerspace.png);
+    background-size: cover;
+
+}
+
+.proj2 {
+    background-image: url(netflix.png);
+    background-size: cover;
+
+}
+
+#p2 {
+    margin-bottom: 20px;
+}
+
+#p1,
+#p2,
+#p3 {
+    display: none;
+}
+
+.proj-card:hover {
+
+
+    box-shadow: 0px 0px 20px 4px rgb(255, 47, 193),
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+
+    .blackfade {
+        transition: ease-in-out 0.5s;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* gap:15px; */
+
+    }
+
+    #p1,
+    #p2,
+    #p3 {
+        display: block;
+    }
+}
+
+.proj-card a {
+    text-decoration: none;
+    color: rgb(255, 47, 193);
+}
+
+.proj-card a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.blackfade {
+    width: 100%;
+    height: 100%;
+    /* margin: 0; */
+    padding: 10px;
+    border-radius: 20px;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    box-sizing: border-box;
+}
+
+/* ============CONTACT CSS============ */
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.contact-text h1 {
+    font-size: 45px;
+    color: blueviolet;
+}
+
+.contact-card {
+    border-radius: 30px;
+    width: 400px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 20px 1px aqua,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: rgb(220, 185, 253);
+}
+
+.contact-card a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.contact-card:hover {
+    box-shadow: 0px 0px 20px 4px rgb(255, 47, 193),
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+    background-color: rgb(31, 0, 46);
+    transition: ease-in 0.3s;
+}
+
+/* ============FOOTER CSS============ */
+footer {
+    margin: 0;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: black;
+    color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    border-top: 5px solid var(--color2);
+    box-shadow: 0px 0px 20px 5px aqua,
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+
+}
+
+/* ============RESPONSIVE CSS============ */
+
+@media screen and (max-width: 1440px) {
+    .profile-pic {
+        height: 350px;
+    }
+
+    .right-main h1 {
+        font-size: 48px;
+    }
+
+    .right-main h2 {
+        font-size: 20px;
+    }
+
+    .educards-cont {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .profile-pic {
+        height: 300px;
+    }
+
+    .right-main h1 {
+        font-size: 36px;
+    }
+
+    .proj-card {
+        width: 500px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        flex-direction: column;
+    }
+
+    #main {
+        padding-top: 60px;
+
+    }
+
+    .profile-pic {
+        height: 400px;
+    }
+
+    .right-main h1 {
+        font-size: 40px;
+    }
+
+    .right-main h2 {
+        font-size: 24px;
+    }
+
+    .right-main {
+        margin: auto;
+    }
+
+    .left-main,
+    .rightmain {
+        margin: 0;
+    }
+
+    .exam-card {
+        width: 130px;
+        font-size: 20px;
+        height: 130px;
+    }
+
+
+
+    .skill-card {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .right-main h1 {
+        font-size: 36px;
+    }
+
+    .right-main h2 {
+        font-size: 20px;
+    }
+
+    .proj-card {
+        width: 340px;
+        height: 200px;
+    }
+
+    #p1 {
+        font-size: 20px;
+    }
+
+    #p2 {
+        font-size: 16px;
+    }
+
+    #p3 {
+        font-size: 16px;
+    }
+
+    .contact-card {
+        width: 300px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile-pic {
+        height: 250px;
+    }
+
+    .right-main h2 {
+        font-size: 14px;
+    }
+
+    .educards {
+        flex-direction: column;
+    }
+
+    .proj-card {
+        width: 240px;
+        height: 140px;
+    }
+
+    #p1 {
+        font-size: 12px;
+    }
+
+    #p2 {
+        font-size: 10px;
+    }
+
+    #p3 {
+        font-size: 10px;
+    }
+
+    .contact-card {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .block h1 {
+        font-size: 40px;
+    }
+
+    .right-main h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .proj-card {
+        width: 200px;
+        height: 120px;
+    }
+
+    .right-main h2 {
+        font-size: 12px;
+    }
+
+    .contact-card {
+        width: 180px;
+    }
+
+    .block h1 {
+        font-size: 35px;
+    }
+
+    .right-main h1 {
+        font-size: 28px;
+    }
+
+    .moon {
+        font-size: 20px;
+        bottom: 10px;
+        right: 10px;
+        border: 3px solid var(--color2);
+        padding: 5px;
+        box-shadow: 0px 0px 20px 3px aqua,
+            25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+            0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+            -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+    }
+
+}
